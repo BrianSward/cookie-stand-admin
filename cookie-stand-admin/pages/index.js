@@ -4,7 +4,7 @@ import Form from './components/Form';
 import Footer from './components/Footer';
 import Table from './components/Table';
 import { useState } from 'react';
-import tableHeaders from 'data'
+// import tableHeaders from 'data'
 
 export default function Home() {
 
@@ -29,13 +29,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
-
       <main className="">
         <Form newPlaceHandler={newPlaceHandler} />
         <Table places={places} />
-  
       </main>
       <Footer places={places}/>
     </>
